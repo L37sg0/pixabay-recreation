@@ -14,3 +14,13 @@
   text-decoration: underline;
   text-decoration-style: dotted;
 }
+
+.nav-link {
+  :hover {
+    color: #00ab6b;
+  }
+}
+
+.dropdown-submenu {
+  padding-left: 20px; /* Adjust this value for indentation */
+}
