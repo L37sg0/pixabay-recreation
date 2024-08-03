@@ -27,14 +27,20 @@
 
 
             <div class="text-end">
-                <button type="button" class="btn btn-outline-light text-dark me-2" style="border: none;">{{ 'Log in'|trans }}</button>
-                <button type="button" class="btn btn-outline-dark me-2">{{ 'Join'|trans }}</button>
-                <button type="button" class="btn btn-success"><i
-                            class="fa-solid fa-arrow-up-from-bracket"></i> {{ 'Upload'|trans }}</button>
+                <button type="button" class="btn btn-outline-light text-dark me-2" style="border: none;"
+                        data-bs-toggle="modal" data-bs-target="#loginModal">{{ 'Log in'|trans }}</button>
+                <button type="button" class="btn btn-outline-dark me-2"
+                        data-bs-toggle="modal" data-bs-target="#registerModal">{{ 'Join'|trans }}</button>
+                <button type="button" class="btn btn-success"
+                        data-bs-toggle="modal" data-bs-target="#registerModal">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i> {{ 'Upload'|trans }}</button>
             </div>
         </div>
     </div>
 </header>
+{% include 'front/components/login-modal.html.twig' %}
+{% include 'front/components/register-modal.html.twig' %}
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function () {
