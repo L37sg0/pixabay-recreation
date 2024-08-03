@@ -1,0 +1,176 @@
+<style>
+    #hero {
+        min-height: 440px;
+        width: 100%;
+        background-image: url("https://cdn.pixabay.com/index/2024/08/01/04-51-06-225_1440x550.jpg");
+        -webkit-background-size: cover;
+    }
+
+    .h-100 {
+        min-height: 440px;
+        /*height: 100% !important;*/
+        background-color: rgba(0, 0, 0, 0.3);
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: 32px;
+            font-weight: 800;
+            box-sizing: border-box;
+            text-align: left;
+            --vh: 9.58px;
+            color: #ffffff;
+            font-family: "Open Sans, system-ui";
+            cursor: default;
+            line-height: 1.5;
+            tab-size: 4;
+            word-break: break-word;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 14px;
+            margin: 0 0 24px;
+            color: #fff;
+            box-sizing: border-box;
+            text-align: left;
+            --vh: 9.58px;
+            font-family: "Open Sans, system-ui";
+            cursor: default;
+            line-height: 1.5;
+            tab-size: 4;
+            word-break: break-word;
+        }
+
+        .container {
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(25, 27, 38, .08);
+            border: 1px solid #ebecf0;
+            height: 56px;
+            padding: 0 0 0 24px;
+            border-radius: 56px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+            box-sizing: border-box;
+            text-align: left;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+            --vh: 9.58px;
+            font-family: "Open Sans, system-ui";
+            cursor: default;
+            line-height: 1.5;
+            tab-size: 4;
+            word-break: break-word;
+        }
+
+        .search-form {
+            flex: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 32px;
+            box-sizing: border-box;
+            text-align: left;
+            color: #fff;
+            font-size: 14px;
+            font-family: "Open Sans, system-ui";
+            font-weight: 400;
+            --vh: 9.58px;
+            cursor: default;
+            line-height: 1.5;
+            tab-size: 4;
+            word-break: break-word;
+        }
+
+        .search-button {
+            color: #00ab6b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 24px;
+            -webkit-appearance: button;
+            font-family: "Open Sans, system-ui";
+            font-weight: 400;
+            overflow: visible;
+            text-transform: none;
+            margin: 0;
+            box-sizing: border-box;
+            text-align: left;
+            --vh: 9.58px;
+            line-height: 1.5;
+            tab-size: 4;
+            word-break: break-word;
+        }
+    }
+
+    .img-result {
+        width: 100%;
+        border-radius: 2px;
+        margin-top: 10%;
+    }
+
+    .discoverMore--jGTm5 {
+        /*position: absolute;*/
+        z-index: 5;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 0 24px;
+        height: 192px;
+        background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), #fff);
+        box-sizing: border-box;
+        color: #191b26;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        --vh: 9.58px;
+        cursor: default;
+        line-height: 1.5;
+        tab-size: 4;
+        word-break: break-word;
+    }
+</style>
+<div id="hero" class="text-center bg-image">
+    <div class="mask h-100">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+                <h1>{{ 'Stunning royalty-free images & royalty-free stock'|trans }}</h1>
+                <h2>{{ 'Over 4.6 million+ high quality stock images, videos and music shared by our talented community.'|trans }}</h2>
+                <div>
+                    <form class="search-form">
+                        <div class="input-group input-group-lg mb-3">
+                            <button class="search-button" type="submit"
+                                    aria-label="Search for all images on Pixabay">
+                                <i class="fa-solid fa-magnifying-glass"></i></button>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <button class="btn btn-outline-success dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">{{ 'All Images'|trans }}
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">{{ 'All Images'|trans }}</a></li>
+                                <li><a class="dropdown-item" href="#">{{ 'Videos'|trans }}</a></li>
+                                <li><a class="dropdown-item" href="#">{{ 'Music'|trans }}</a></li>
+                                <li><a class="dropdown-item" href="#">{{ 'Sound Effects'|trans }}</a></li>
+                                <li><a class="dropdown-item" href="#">{{ 'GIFs'|trans }}</a></li>
+                                <li><a class="dropdown-item" href="#">{{ 'Users'|trans }}</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">{{ 'Search Options'|trans }}</a></li>
+                            </ul>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
