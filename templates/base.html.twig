@@ -26,8 +26,9 @@
         {% endblock %}
     </head>
     <body>
-        {% include 'front/components/hero.html.twig' %}
-        {% block body %}{% endblock %}
-        {% include 'front/components/footer.html.twig' %}
+    {% include 'front/components/header.html.twig' %}
+    {% include 'front/components/hero.html.twig' %}
+    {% block body %}{% endblock %}
+    {% include 'front/components/footer.html.twig' %}
     </body>
 </html>
