@@ -23,9 +23,113 @@
 
             <!-- Include your search component here -->
             {% include 'front/components/search-sm.html.twig' %}
+            <div class="dropdown" style="display: flex;align-items: stretch;flex-direction: column;font-size: 14px;font-weight: 400;">
+                <button class="btn btn-outline-light dropdown-toggle text-dark" type="button" style="border: none;"
+                        data-bs-toggle="dropdown" aria-expanded="false">{{ 'Explore'|trans }}
+                </button>
+                <div class="dropdown-menu bg-dark text-light">
+                    <div class="row row-cols-4">
+
+                        <div class="col mb-3">
+                            <h5>{{ 'Discover'|trans }}</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'Editor\'s Choice'|trans }}</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'Curated Collections'|trans }}</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'Pixabay Radio'|trans }}
+                                        <span class="badge bg-pixabay">NEW</span></a></li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'Popular Images'|trans }}</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'Popular Videos'|trans }}</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'Popular Music'|trans }}</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'Popular Searches'|trans }}</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col mb-3">
+                            <h5>{{ 'Comunity'|trans }}</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'Blog'|trans }}</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'Forum'|trans }}</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'Creators'|trans }}</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'Cameras'|trans }}</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col mb-3">
+                            <h5>{{ 'About'|trans }}</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'About Us'|trans }}</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'FAQ'|trans }}</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'License Summary'|trans }}</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'Terms of Service'|trans }}</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'Privacy Policy'|trans }}</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'Cookies Policy'|trans }}</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'Digital Services Act'|trans }}</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'Report Content'|trans }}</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#"
+                                                             class="nav-link p-0  text-light">{{ 'API'|trans }}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <hr class="dropdown-divider text-light">
+                    </div>
+                    <div class="row icon-row">
+                        <div class="col">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="col">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </div>
+                        <div class="col">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="col">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="text-end">
-                <button type="button" class="btn btn-outline-light text-dark me-2">{{ 'Log in'|trans }}</button>
+                <button type="button" class="btn btn-outline-light text-dark me-2" style="border: none;">{{ 'Log in'|trans }}</button>
                 <button type="button" class="btn btn-outline-dark me-2">{{ 'Join'|trans }}</button>
                 <button type="button" class="btn btn-success"><i
                             class="fa-solid fa-arrow-up-from-bracket"></i> {{ 'Upload'|trans }}</button>
